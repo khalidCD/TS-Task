@@ -21,15 +21,21 @@ A basic REST API with GET and POST endpoints for user management, built with Nod
    ```
    yarn install
    ```
+
 ## Usage
-   Development mode:
-   ```
-   yarn dev
-   ```
+
+Development mode:
+
+```
+yarn dev
+```
 
 ## API Endpoints:
-#### GET ```/users```
+
+#### GET `/users`
+
 Response:
+
 ```
 [
   {
@@ -39,15 +45,20 @@ Response:
   }
 ]
 ```
-#### POST  ```/users```
+
+#### POST `/users`
+
 Request Body:
+
 ```
 {
   "name": "krish",
   "email": "krish@example.com"
 }
 ```
+
 #### Successful Response (201):
+
 ```
 {
   "id": 2,
@@ -55,9 +66,11 @@ Request Body:
   "email": "krish@example.com"
 }
 ```
+
 #### Validation Errors (400):
--    Missing name or email
 
--   Empty name or email
+- Missing name or email
 
--   Invalid data types
+- Empty name or email
+
+- Invalid data types
